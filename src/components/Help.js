@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { XOutline } from "@graywolfai/react-heroicons";
-import avatar from "../test1233.png";
+import avatar from "../test123.png";
 
 function IconSVG() {
   return (
@@ -63,7 +63,7 @@ export const Help = () => {
           <motion.div
             initial={{ y: "100%", opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            exit={{ y: "100%", opacity: 0 }}
+            exit={{ scale: 0.1, opacity: 0 }}
             transition={{ duration: 0.2, ease: "easeInOut" }}
             className="fixed bottom-100 right-24 max-w-sm-- rounded-lg border-t-8 border-nav-links-hover px-4 py-4 bg-white"
           >
